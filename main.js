@@ -76,5 +76,5 @@
         if (event.target.id !== 'download-original-image-menu') {
             closeMenu();
         }
-    });
+    }, true); // set capture=true in case that other elements prevent the event
 })();
