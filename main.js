@@ -9,7 +9,6 @@
 // @icon         https://t.bilibili.com/favicon.ico
 // @homepage     https://github.com/LucunJi/download-bili-original-image
 // @supportURL   https://github.com/LucunJi/download-bili-original-image/issues
-// @grant        none
 // @require https://code.jquery.com/jquery-3.7.1.slim.min.js#sha256=9261efb3407e3a9096e4654750d8eff6b3a663422f48845c7fbcc65034c340cf
 // ==/UserScript==
 
