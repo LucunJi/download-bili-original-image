@@ -24,7 +24,7 @@
 
 #download-original-image-menu {
     position: absolute;
-    z-index: 999;
+    z-index: 999999;
     user-select: none;
     font-size: small;
     padding: 5px 8px;
@@ -44,7 +44,7 @@
 
     document.addEventListener('contextmenu', function(event) {
         const tgt = event.target;
-        if (tgt.nodeName === 'IMG' && $(tgt).parents('.bili-album, .image-exhibition').length) {
+        if (tgt.nodeName === 'IMG' && $(tgt).parents('.bili-album, .image-exhibition, .bili-gallery').length) {
             event.preventDefault();
 
             menu.css({
@@ -57,7 +57,6 @@
             imgSrc.pathname = imgSrc.pathname.replace(/@.*\.(avif|webp)$/, '');
             const imgName = imgSrc.pathname.split('/').pop();
             menu.on('click', function(eventMenu) {
-                console.log(eventMenu.data);
                 fetch(imgSrc).then(resp => resp.blob()).then(blob => {
                     const a = document.createElement('a');
                     a.href = URL.createObjectURL(blob);
