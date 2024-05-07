@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         下载 bilibili 原图
 // @namespace    LucunJi
-// @version      2.0.1
+// @version      2.0.2
 // @description  以原来的格式右键下载 bilibili 动态和评论区中的图片，而不是 webp 或 avif
 // @author       Lucun_Ji
 // @license      WTFPL
